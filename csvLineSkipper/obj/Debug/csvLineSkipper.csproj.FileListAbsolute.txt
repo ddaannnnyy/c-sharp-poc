@@ -1,0 +1,10 @@
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\obj\Debug\csvLineSkipper.csprojAssemblyReference.cache
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\obj\Debug\csvLineSkipper.frmMain.resources
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\obj\Debug\csvLineSkipper.Properties.Resources.resources
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\obj\Debug\csvLineSkipper.csproj.GenerateResource.cache
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\obj\Debug\csvLineSkipper.csproj.CoreCompileInputs.cache
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\bin\Debug\csvLineSkipper.exe.config
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\bin\Debug\csvLineSkipper.exe
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\bin\Debug\csvLineSkipper.pdb
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\obj\Debug\csvLineSkipper.exe
+C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\obj\Debug\csvLineSkipper.pdb
