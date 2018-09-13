@@ -8,3 +8,13 @@ C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\bin\Debug\csvLineSkip
 C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\bin\Debug\csvLineSkipper.pdb
 C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\obj\Debug\csvLineSkipper.exe
 C:\Users\Owner\source\repos\ProofOfConcepts\csvLineSkipper\obj\Debug\csvLineSkipper.pdb
+E:\Development\repos\c-sharp-poc\csvLineSkipper\bin\Debug\csvLineSkipper.exe.config
+E:\Development\repos\c-sharp-poc\csvLineSkipper\bin\Debug\csvLineSkipper.exe
+E:\Development\repos\c-sharp-poc\csvLineSkipper\bin\Debug\csvLineSkipper.pdb
+E:\Development\repos\c-sharp-poc\csvLineSkipper\obj\Debug\csvLineSkipper.csprojResolveAssemblyReference.cache
+E:\Development\repos\c-sharp-poc\csvLineSkipper\obj\Debug\csvLineSkipper.frmMain.resources
+E:\Development\repos\c-sharp-poc\csvLineSkipper\obj\Debug\csvLineSkipper.Properties.Resources.resources
+E:\Development\repos\c-sharp-poc\csvLineSkipper\obj\Debug\csvLineSkipper.csproj.GenerateResource.cache
+E:\Development\repos\c-sharp-poc\csvLineSkipper\obj\Debug\csvLineSkipper.csproj.CoreCompileInputs.cache
+E:\Development\repos\c-sharp-poc\csvLineSkipper\obj\Debug\csvLineSkipper.exe
+E:\Development\repos\c-sharp-poc\csvLineSkipper\obj\Debug\csvLineSkipper.pdb
