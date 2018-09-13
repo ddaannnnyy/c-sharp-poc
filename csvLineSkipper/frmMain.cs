@@ -16,6 +16,7 @@ namespace csvLineSkipper
     {
         DragDropManager ddm = new DragDropManager(); //creates new instance of class DragDropManager
         string fileLoc = string.Empty;
+        
 
         public frmMain()
         {
@@ -77,7 +78,7 @@ namespace csvLineSkipper
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An Error Occured while reading the file");
+                MessageBox.Show("An Error Occured while reading the file" + ex.ToString());
                 return null;
             }
         }
@@ -89,17 +90,17 @@ namespace csvLineSkipper
         /// <param name="arrayPointOne">Optional: choice in specific point of array array[arrayPointOne][arrayPointTwo]</param>
         /// <param name="arrayPointTwo">Optional: choice in specific point of array array[arrayPointOne][arrayPointTwo]</param>
         /// <returns>string of chosen data from array points</returns>
-        public string collectSpecificFromFile(string fileLoc, int arrayPointOne = 0, int arrayPointTwo = 0)
+        public string[] collectSpecificFromFile(string fileLoc, int arrayPointOne = 0, int arrayPointTwo = 0)
         {
             try
             {
-                var collectedData = new List<string>();
                 var outputContents = readFile(fileLoc);
-                string getData = string.Empty;
-                return getData = outputContents[arrayPointOne][arrayPointTwo].ToString();
-                
-
-                
+                var collectedData = new List<string>(); //makes a new list to store 
+                            
+                var getData = outputContents[arrayPointOne][arrayPointTwo].ToString();
+                collectedData.Add(getData);
+                return collectedData.ToArray();
+                               
             }
             catch (Exception ex)
             {
@@ -127,6 +128,7 @@ namespace csvLineSkipper
 
                 txtOutput.Text += "=======Collected Data:=======\r\n";
                 int arrayOneJump = arrayPointOne;
+
                 for (int i = arrayPointOne; i < outputContents.Count; i=i+jumpCount)
                 {                   
                     var getData = outputContents[arrayOneJump][arrayPointTwo].ToString();
@@ -145,14 +147,19 @@ namespace csvLineSkipper
             }
         }
 
-        public void displayCollectedData(string[] dataset)
+        /// <summary>
+        /// Presents display collected data to the txtOutput window.
+        /// </summary>
+        /// <param name="dataset"></param>
+        public void displayCollectedData(string[] dataset, int jumpCount, int arrayPointOne, int arrayPointTwo)
         {
             //currently only displays the collectSpecificFromFile contents, as that's all I really want at the moment.
             //TODO add switchable option control
 
             try
             {
-                var collection = collectSpecificFromFile(fileLoc, 11, 20, 18); //hardcoded for testing
+                var collection = collectSpecificFromFile(fileLoc, jumpCount, arrayPointOne, arrayPointTwo);
+
                 foreach (var item in collection)
                 {
                     txtOutput.AppendText(item.ToString()+"\r\n");
@@ -167,8 +174,34 @@ namespace csvLineSkipper
 
         private void btnGo_Click(object sender, EventArgs e)
         {
-            fileLoc = lblFileLocation.Text; //gets file location as string from label after DragDrop           
-            displayCollectedData(collectSpecificFromFile(fileLoc, 11, 20, 18));
+            //get values from UI components
+            fileLoc = lblFileLocation.Text; //gets file location as string from label after DragDrop  
+            
+            int arrayPointOne = (int)nudArrayValueOne.Value;
+            int arrayPointTwo = (int)nudArrayValueTwo.Value;
+            int counterValue = (int)nudCounter.Value;
+
+            bool ischkCounter = chkCounter.Checked;
+            var collectedDataCounter = collectSpecificFromFile(fileLoc, arrayPointOne, arrayPointTwo, counterValue);
+
+            displayCollectedData(collectedDataCounter, counterValue, arrayPointOne, arrayPointTwo);
+            
+        }
+
+        /// <summary>
+        /// Turns nudCounter readonly true or false, based on checkbox toggle.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void chkCounter_CheckedChanged(object sender, EventArgs e)
+        {
+            //TODO set this up properly, right now it's unused.
+            if (nudCounter.ReadOnly == true)
+            {
+                nudCounter.ReadOnly = false;
+            }
+            else nudCounter.ReadOnly = true;
+
         }
     }
 }
