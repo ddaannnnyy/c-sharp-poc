@@ -1,0 +1,6 @@
+﻿This proof of concept is really simple,
+
+basically just need a csv read and predicatable and repeating information captured.
+
+for example, if on an .xls a value comes up every 11 lines, I want the for loop to skip values in string[] from the reader and output every wanted value.
+
