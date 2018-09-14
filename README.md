@@ -1,7 +1,7 @@
 # c-sharp-poc
 
 Hello, sometimes I find myself in need of hacky, rapid proof of concepts.
-My strongest OOP language is C#, so I usually throw them in here. Feel free to let me know if I could approached a problem a different way,
+My strongest OOP language is C#, so I usually throw them in here. Feel free to let me know if I could have approached a problem in a different way,
 while my code may be inefficient, I am actively trying to learn.
 
 email me at dannhebdon@gmail.com, or find me on twitter @_hebdon.
